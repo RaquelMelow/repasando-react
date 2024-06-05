@@ -49,6 +49,10 @@ function App() {
     window.localStorage.removeItem('turn');
   };
 
+  useEffect(() => {
+
+  }, [winner]);
+
   return (
     <>
       <main className="board">
