@@ -6,10 +6,10 @@ function RenderMovies({ movies }) {
             {
                 // eslint-disable-next-line react/prop-types
                 movies.map(movie => (
-                    <li className='movie' key={movie.imdbID}>
-                        <h3>{movie.Title}</h3>
-                        <p>{movie.Year}</p>
-                        <img src={movie.Poster} alt={movie.Title} />
+                    <li className='movie' key={movie.id}>
+                        <h3 className="movie-title">{movie.title}</h3>
+                        <p>{movie.year}</p>
+                        <img src={movie.poster} alt={movie.title} />
                     </li>
                 ))
             }
